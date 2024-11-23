@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(../Pictures/صنوبر.jpg);
+            background-repeat: no-repeat ;
+            background-size: cover;
+        }
+        h1{
+            color: green;
+            text-align: center;
+            font-size: 45px;
+            margin: 20px 0;
+        }
+        .game{
+            width: 60%;
+            margin: 0 17%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(42, 92, 121, 0.656);
+            padding: 20px;
+        }
+        h3{
+            text-align: center;
+            color: rgb(0, 65, 103);
+            font-size: 25px;
+            margin: 0 0 20px 0;
+        }
+        form{
+            display: flex;
+            justify-content: space-between;
+            width: 29%;
+            margin: 0 36.5%;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+        }
+        .input input{
+            width: 175px;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            padding-left: 5px;
+            font-size: large;
+            z-index: 2;
+        }
+        .input div{
+            background-color: rgb(245, 0, 0);
+            width: 173px;
+            height: 40px;
+            padding: 15px 5px 0 5px;
+            position: relative;
+            top: -10px;
+            right: 1.1px;
+            text-align: center;
+            display: none;
+        }
+        form > input{
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(0, 162, 255);
+        }
+        .Show{
+            width: 40%;
+            height: 400px;
+            margin: 20px 28% 0 28%;
+            padding: 20px;
+            background-color: rgba(42, 92, 121, 0.656);
+        }
+        .Show img{
+            width: 100%;
+            height: 100%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome in My Game</h1>
+        <div class="game">
+            <h3>Please Guess Correct Number</h3>
+            <form action="">
+                <div class="input">
+                    <input class="guess" type="number">
+                    <div class="msg">
+                        Enter number from 0=>10 <br>
+                        You Have 5 Tries
+                    </div>
+                </div>
+                <input class="submit" type="submit">
+            </form>
+        </div>
+    </div>
+    <script src="Project2.js"></script>
+</body>
+</html>
