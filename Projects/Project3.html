@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            background-image: radial-gradient(circle 250px at center,black 30%,rgb(210, 41, 72));
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 208, 0);
+            margin: 40px 0;
+            font-size: 35px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .form{
+            width: 35%;
+            height: fit-content;
+            background-color: rgba(210, 41, 72, 0.075);
+            box-shadow: 0 0 15px 3px black;
+            padding: 20px;
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(255, 89, 0);
+            margin: 20px 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 30px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        label{
+            color: gold;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        input{
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            z-index: 2;
+            font-size: 20px;
+            padding-left: 5px;
+        }
+        form div p{
+            padding: 15px 5px 5px 5px;
+            font-size: 18px;
+            background-color: gold;
+            position: relative;
+            bottom: 10px;
+            display: none;
+            border-radius: 0 0 5px 5px;
+        }
+        p span{
+            color: red;
+        }
+        button{
+            width: 40%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            margin: 50px 30% 20px 30%;
+            background-color: rgb(255, 123, 0);
+            font-size: 25px;
+        }
+        .table{
+            margin-bottom: 100px;
+            display: none;
+        }
+        table{
+            width: 1100px;
+            background-color: rgba(0, 0, 0, 0.368);
+            border-spacing: 0;
+        }
+        th{
+            color: gold;
+            border-bottom: 3px solid black;
+            padding: 5px;
+            font-size: 22px;
+        }
+        th.name{
+            width: 250px;
+        }
+        th.id{
+            width: 150px;
+        }
+        th.email{
+            width: 500px;
+        }
+        td{
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            border: 2px solid rgb(125, 0, 37);
+            color: red;
+            font-size: 20px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome in My Project to arrange Rigestry Data</h1>
+    <div class="container">
+        <div class="form">
+            <h3>input Element</h3>
+            <form action="">
+                <div class="name">
+                    <div class="input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <p class="msgName">
+                        Please Enter only name & father name. <br>
+                        Also, Don’t use any punctuation.
+                    </p>
+                </div>
+                <div class="email">
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email">
+                    </div>
+                    <p class="msgEmail">Please Enter Valid Email Example: <span>xxxx@gmail.com</span></p>
+                </div>
+                <div class="password">
+                    <div class="input">
+                        <label for="pass">Password:</label>
+                        <input type="text" id="pass">
+                    </div>
+                    <p class="msgPass">Please Enter from 8 to 16 Character Example: <span>dsC324&#</span></p>
+                </div>
+                <div class="ID">
+                    <div class="input">
+                        <label for="id">ID:</label>
+                        <input type="text" id="id">
+                    </div>
+                    <p class="msgId">Please Enter vaild ID Example: <span>2023xxxx</span></p>
+                </div>
+                <button>Add Details</button>
+            </form>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th class="name">Name</th>
+                    <th class="id">id</th>
+                    <th class="email">Email</th>
+                    <th class="password">password</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="Project3.js"></script>
+</body>
+</html>
